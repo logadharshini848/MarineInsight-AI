@@ -1,0 +1,320 @@
+<header>
+  <div class="logo">🌊 MarineInsight AI</div>
+
+  <nav>
+    <a href="#">Home</a>
+    <a href="#">Login</a>
+    <a href="#">Dashboard</a>
+    <a href="#">Reports</a>
+  </nav>
+  <button id="themeBtn" onclick="toggleTheme()">
+🌙 Dark Mode
+</button>
+</header>
+
+<section class="hero">
+  <div class="hero-content">
+    <h1>AI-Driven Marine Data Platform</h1>
+    <p>Oceanographic, Fisheries and Biodiversity Analysis</p>
+    <a href="#" class="btn">Get Started</a>
+  </div>
+</section>
+
+<section class="about">
+  <h2>About The Project</h2>
+  <p>
+    MarineInsight AI helps manage marine biodiversity,
+    fisheries and oceanographic data using AI-powered insights.
+  </p>
+</section>
+
+<section class="features">
+  <div class="card">
+    <h3>🌊 Ocean Data</h3>
+    <p>Monitor marine environmental conditions.</p>
+  </div>
+
+  <div class="card">
+    <h3>🐟 Fisheries</h3>
+    <p>Track fish populations.</p>
+  </div>
+
+  <div class="card">
+    <h3>🪸 Biodiversity</h3>
+    <p>Manage species records.</p>
+  </div>
+
+  <div class="card">
+    <h3>🤖 AI Insights</h3>
+    <p>Generate intelligent analytics.</p>
+  </div>
+</section>
+
+<section class="login-section">
+  <h2>Login Portal</h2>
+
+  <div class="login-box">
+    <input type="text" id="username" placeholder="Username">
+    <input type="password" id="password" placeholder="Password">
+
+    <button onclick="login()">Login</button>
+
+    <p id="message"></p>
+  </div>
+</section>
+
+<section class="data-entry">
+  <h2>Marine Data Entry</h2>
+
+  <div class="form-box">
+    <input type="text" id="species" placeholder="Species Name">
+    <input type="text" id="location" placeholder="Location">
+    <input type="number" id="population" placeholder="Population Count">
+    <input type="number" id="temperature" placeholder="Water Temperature">
+    <input type="date" id="date">
+
+    <button onclick="saveData()">Save Data</button>
+
+    <p id="saveMessage"></p>
+  </div>
+</section>
+  <section class="records">
+
+<div class="search-box">
+    <input type="text"
+           id="searchInput"
+           placeholder="Search Species..."
+           onkeyup="searchRecords()">
+</div>
+
+  <h2>Saved Records</h2>
+
+  <table>
+    <tr>
+      <th>Species</th>
+      <th>Location</th>
+      <th>Population</th>
+    </tr>
+
+   <tbody id="recordsTable">
+
+</tbody>
+
+  </table>
+</section>
+<section class="dashboard">
+  <h2>Dashboard Overview</h2>
+
+  <div class="dashboard-cards">
+
+    <div class="dash-card">
+      <h3>🌊 Ocean Records</h3>
+      <h1>150</h1>
+    </div>
+
+    <div class="dash-card">
+      <h3>🐟 Fish Species</h3>
+      <h1>82</h1>
+    </div>
+
+    <div class="dash-card">
+      <h3>🪸 Biodiversity Records</h3>
+      <h1>120</h1>
+    </div>
+
+    <div class="dash-card">
+      <h3>🤖 AI Insights</h3>
+      <h1>45</h1>
+    </div>
+
+  </div>
+</section>
+<section class="ai-analysis">
+
+<h2>AI Marine Health Analysis</h2>
+
+<div class="analysis-card">
+<h3>Current Ocean Status</h3>
+
+<p id="healthStatus">
+Healthy Ecosystem ✅
+</p>
+
+<button onclick="analyzeOcean()">
+Run AI Analysis
+</button>
+
+</div>
+
+</section>
+<section class="weather">
+
+<h2>Ocean Weather Monitoring</h2>
+
+<div class="dashboard-cards">
+
+<div class="dash-card">
+<h3>🌡 Temperature</h3>
+<h1 id="temp">28°C</h1>
+</div>
+
+<div class="dash-card">
+<h3>💧 Humidity</h3>
+<h1 id="humidity">76%</h1>
+</div>
+
+<div class="dash-card">
+<h3>🌊 Wave Height</h3>
+<h1 id="wave">1.8 m</h1>
+</div>
+
+<div class="dash-card">
+<h3>💨 Wind Speed</h3>
+<h1 id="wind">18 km/h</h1>
+</div>
+
+</div>
+
+<button onclick="updateWeather()" class="btn">
+Refresh Weather
+</button>
+
+</section>
+<section class="recommendation">
+
+<h2>AI Recommendation</h2>
+
+<div class="analysis-card">
+
+<p id="recommendation">
+Click the button to get an AI recommendation.
+</p>
+
+<button onclick="generateRecommendation()" class="btn">
+Generate Recommendation
+</button>
+
+</div>
+
+</section>
+<section class="chart-section">
+
+<h2>Marine Data Statistics</h2>
+
+<div class="chart">
+
+<div class="bar ocean">
+<span>150</span>
+<p>Ocean Records</p>
+</div>
+
+<div class="bar fish">
+<span>82</span>
+<p>Fish Species</p>
+</div>
+
+<div class="bar bio">
+<span>120</span>
+<p>Biodiversity</p>
+</div>
+
+<div class="bar ai">
+<span>45</span>
+<p>AI Reports</p>
+</div>
+
+</div>
+
+</section>
+<section class="feedback">
+
+<h2>Contact & Feedback</h2>
+
+<div class="feedback-box">
+
+<input type="text"
+id="name"
+placeholder="Enter Your Name">
+
+<input type="email"
+id="email"
+placeholder="Enter Your Email">
+
+<textarea
+id="feedback"
+placeholder="Write your feedback..."
+rows="5"></textarea>
+
+<button onclick="submitFeedback()">
+Submit Feedback
+</button>
+
+<p id="feedbackMessage"></p>
+
+</div>
+
+</section>
+<section class="about">
+  <h2>Project Objectives</h2>
+
+  <p>
+    • Collect marine biodiversity data.<br>
+    • Monitor fisheries information.<br>
+    • Store oceanographic records.<br>
+    • Generate AI-based insights.<br>
+    • Support sustainable marine resource management.
+  </p>
+
+</section>
+
+<section class="about">
+
+  <h2>AI Insights</h2>
+
+  <p>
+    Fish population is expected to increase by 12%.<br>
+    Biodiversity records indicate stable ecosystem growth.<br>
+    Ocean temperature remains within safe environmental limits.
+  </p>
+
+</section>
+
+<section class="about">
+
+  <h2>Future Scope</h2>
+
+  <p>
+    Integration with Artificial Intelligence models,
+    cloud storage, IoT sensors,
+    real-time marine monitoring,
+    predictive analytics,
+    and mobile applications.
+  </p>
+
+</section>
+
+<section class="about">
+
+  <h2>Project Developer</h2>
+
+  <p>
+    Developed by Logadharshini T
+    as an ECE Mini Project using
+    HTML, CSS, JavaScript and Local Storage.
+  </p>
+
+</section>
+<section class="clock-section">
+
+<h2>System Date & Time</h2>
+
+<div class="clock-box">
+
+<h1 id="liveClock"></h1>
+
+</div>
+
+</section>
+<footer>
+  <p>MarineInsight AI </p>
+</footer>
